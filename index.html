@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="st.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet" />
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="container nav">
+            <div class="logo">My<span>Portfolio</span></div>
+            <nav>
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero" id="top">
+            <div class="container hero-grid">
+                <div>
+                    <p class="eyebrow">Hello, I'm</p>
+                    <h1>Divyanshi Verma</h1>
+                    <p class="subtitle">MCA Student at NIT Trichy</p>
+                    <p class="hero-text">
+                        I am currently pursuing a Master of Computer Applications (MCA) 
+                        at National Institute of Technology Tiruchirappalli with
+                        a keen interest in software development.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="#projects" class="btn primary">Explore My Work</a>
+                    </div>
+                </div>
+                <div class="hero-card">
+                    <img src="me.jpeg" alt="Divyanshi Verma" class="profile-image" />
+                    
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="section">
+            <div class="container">
+                <h2>About Me</h2>
+                <p class="section-text">
+                    I am Divyanshi Verma, an MCA student at National 
+                    Institute of Technology Tiruchirappalli, with a strong interest in
+                    software development and continuous learning. I enjoy working on 
+                    projects that challenge my problem-solving and
+                    creativity, and I am focused on building a solid career in the tech industry.
+                </p>
+            </div>
+        </section>
+
+        <section id="projects" class="section">
+            <div class="container">
+                <h2>Projects</h2>
+                <div class="grid projects-grid">
+                    <article class="card">
+                        <h3>Multiplayer Trivia Game</h3>
+                        <p>
+                            A real-time multiplayer trivia game where random questions are
+                            displayed and players compete to answer first. Fastest correct
+                            answer scores points, creating an engaging competitive experience.
+                        </p>
+                        <div class="card-footer">
+                            <a href="https://github.com/vermadivi18/Trivia_game_Multiplayer" class="card-link">View project</a>
+                        </div>
+                    </article>
+                    
+                    <article class="card">
+                        <h3>Movie Recommender System</h3>
+                        <p>
+                            A Movie Recommender System works by analyzing what a user likes or has watched before and finding similar movies. Based
+                            on these patterns, it suggests new movies that match the user’s interests.
+                        </p>
+                        <div class="card-footer">
+    
+                            <a href="https://github.com/vermadivi18/MovieGuesser" class="card-link">View project</a>
+                        </div>
+                    </article>
+                    
+                    <article class="card">
+                        <h3>Tic Tac Toe</h3>
+                        <p>
+                            A Tic Tac Toe game allows players to play either with a friend offline or against the computer. It works by taking turns
+                            to place symbols on the grid and checking for a winning pattern after each move.
+                        </p>
+                        <div class="card-footer">
+                            <a href="https://github.com/vermadivi18/tic-tac-toe" class="card-link">View project</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <div class="container contact-grid">
+                <div>
+                    <h2>Contact</h2>
+                    <p class="section-text">
+                        Feel free to reach out if you want to collaborate, have a
+                        question, or just want to say hi.
+                    </p>
+                    <ul class="contact-list">
+                        <li><span>Email:</span> <a href="mailto:vermadivi18@gmail.com">vermadivi18@gmail.com</a>
+                        </li>
+                        <li><span>GitHub:</span> <a href="https://github.com/vermadivi18">vermadivi18</a></li>
+                        <li><span>LinkedIn:</span> <a href="https://www.linkedin.com/in/divyanshi-verma-b5a180323/">vermadivi18</a>
+                        </li>
+                    </ul>
+                </div>
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input id="name" type="text" placeholder="Your name" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input id="email" type="email" placeholder="you@example.com" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" rows="4" placeholder="Write your message..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn primary full-width">
+                        Send Message
+                    </button>
+                    <p class="form-status" id="form-status"></p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-content">
+            <p>© <span id="year"></span> Divyanshi Verma. All rights reserved.</p>
+            <a href="#top" class="back-to-top">Back to top ↑</a>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
